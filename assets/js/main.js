@@ -15,7 +15,7 @@ productos.forEach((product) => {
 
     shopContent.append(content);
 
-    let comprar = document.createElement("button");
+    const comprar = document.createElement("button");
     comprar.innerText = "comprar";
     comprar.className = "comprar";
 
@@ -28,7 +28,7 @@ productos.forEach((product) => {
             nombre: product.nombre,
             precio: product.precio,
         });
-        console.log(carrito);
+        Swal.fire("su compra se ha realizado con exito");
     });
 });
 
